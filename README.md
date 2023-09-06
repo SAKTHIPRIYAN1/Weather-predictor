@@ -5,6 +5,6 @@
 
  known errors: none;
 
- need to be improved: Location precition and google auto complete;
+ need to be improved: Location precision and google auto complete;
 
  known problem: default location denied access in mobile
