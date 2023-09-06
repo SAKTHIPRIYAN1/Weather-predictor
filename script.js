@@ -80,7 +80,7 @@ function getlocation() {
     //using the latitude and longitude Api...
 // the api key==> http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0ebf0e29926cc939f557a936228e1129
 
-    let api1=`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0ebf0e29926cc939f557a936228e1129&units=metric`
+    let api1=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0ebf0e29926cc939f557a936228e1129&units=metric`
     fetch_api(api1)
 
 }
@@ -178,7 +178,7 @@ let cty=String(city_to_find).toLowerCase()
 console.log(cty)
 
 if(cty){
-let api2=`http://api.openweathermap.org/data/2.5/weather?q=${cty}&appid=0ebf0e29926cc939f557a936228e1129&units=metric`
+let api2=`https://api.openweathermap.org/data/2.5/weather?q=${cty}&appid=0ebf0e29926cc939f557a936228e1129&units=metric`
 fetch_api(api2)
 }
 
