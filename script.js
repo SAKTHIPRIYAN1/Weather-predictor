@@ -137,7 +137,7 @@ function fetch_api(api){
 
 
 
-
+let fol;
 
 
 // fetching the data....
@@ -174,14 +174,13 @@ local_loc()
 
 function serach_weather(){
 var city_to_find=sr_br.value
-let cty=String(city_to_find).toLowerCase()
+let cty=String(city_to_find).toLowerCase().replace(' ','')
 console.log(cty)
 
 if(cty){
 let api2=`https://api.openweathermap.org/data/2.5/weather?q=${cty}&appid=0ebf0e29926cc939f557a936228e1129&units=metric`
 fetch_api(api2)
 }
-
 
 sr_br.value=''
 }
@@ -190,7 +189,4 @@ sr_br.value=''
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     let api3=`https://api.openweathermap.org/data/2.5/weather?q=chennai&appid=0ebf0e29926cc939f557a936228e1129&units=metric`
     fetch_api(api3)  
-} 
-
-
-
+}
